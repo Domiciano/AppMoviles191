@@ -3,38 +3,65 @@
     android:layout_width="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:background="#000"
-    android:gravity="center">
+    android:background="#fe9900"
+    android:gravity="center_horizontal"
+    android:id="@+id/login_root">
 
 
     <!-- Este es un comentario -->
 
-    <TextView
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:background="#232f3f"
+        android:layout_marginBottom="20dp"
+        android:padding="10dp">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/amazon"
+        />
+    </LinearLayout>
+
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hola mundo"
-        android:textSize="20sp"
-        android:gravity="center"/>
+        android:hint="Usuario"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bordes_redondeados"
+        android:padding="15dp"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Contraseña"
         android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"/>
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bordes_redondeados"
+        android:padding="15dp"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Click me!"
-        android:textColor="#000"
-        android:background="@drawable/bordes_redondeados"/>
+        android:text="Log in"
+        android:textColor="#fff"
+        android:background="#232f3f"
+        android:layout_marginBottom="20dp"/>
 
-    <ImageView
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/amazon"
-        />
+        android:text="Forgot your password?"
+        android:textSize="25sp"
+        android:layout_marginBottom="20dp"/>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textSize="25sp"/>
 
 </LinearLayout>
